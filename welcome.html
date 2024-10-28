@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaraKurşun CS2</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">KaraKurşun CS2</div>
+            <button class="login-btn">Giriş Yap</button>
+        </nav>
+        
+        <div class="welcome-content">
+            <h1>KaraKurşun CS2 Sunucusu</h1>
+            <p>Türkiye'nin en iyi CS2 AWP sunucusu!</p>
+            <div class="server-info">
+                <div class="info-box">
+                    <h3>Sunucu Özellikleri</h3>
+                    <ul>
+                        <li>128 Tick</li>
+                        <li>Anti-Cheat Koruması</li>
+                        <li>7/24 Admin Desteği</li>
+                        <li>Özel Pluginler</li>
+                    </ul>
+                </div>
+            </div>
+
+        <a href="https://discord.gg/karakursun" class="discord-btn" target="_blank">
+    <i class="fab fa-discord"></i>
+    Discord'a Katıl
+        </a>
+
+        </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <h2>Giriş Yap</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Kullanıcı Adı" id="username" required>
+                <input type="password" placeholder="Şifre" id="password" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+</html>

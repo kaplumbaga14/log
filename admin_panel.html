@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetici Paneli - KaraKurşun CS2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/admin_panel.css">
+    <script src="/js/admin.js"></script>
+</head>
+<body>
+    <div class="admin-wrapper">
+        <nav class="admin-sidebar">
+            <div class="sidebar-header">
+                <h3>Yönetici Paneli</h3>
+            </div>
+            <ul class="menu-items">
+                <li class="active">
+                    <a href="#dashboard">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#admins">
+                        <i class="fas fa-users-cog"></i>
+                        Adminler
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-chart-line"></i>
+                        Log Kayıtları
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Çıkış Yap
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="admin-content">
+            <header class="admin-header">
+            <h2>Dashboard</h2>
+            <div class="user-info">
+             <span class="admin-name">Yönetici Paneline Hoşgeldiniz.</span>
+             </div>
+             </header>
+
+            <div class="admin-main">
+                <div class="admin-add-section">
+                    <button id="showAddAdminForm" class="fancy-button">
+                        <i class="fas fa-user-plus"></i>
+                        Yeni Admin Ekle
+                    </button>
+                    
+                    <div id="addAdminFormContainer" class="admin-form-container" style="display: none;">
+                        <form id="addAdminForm" class="fancy-form">
+                            <div class="form-group">
+                                <input type="text" id="newAdminUsername" required>
+                                <label>Kullanıcı Adı</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="newAdminPassword" required>
+                                <label>Şifre</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Admin Ekle</span>
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="admin-list-section">
+                    <h3>Admin Listesi</h3>
+                    <div class="search-box">
+                        <input type="text" id="adminSearch" placeholder="Admin ara...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div id="adminList" class="admin-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin_panel.js"></script>
+</body>
+</html>

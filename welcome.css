@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #2d2d2d;
+    --accent-color: #007bff;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.container {
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--secondary-color);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.welcome-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.welcome-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.server-info {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.info-box {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.info-box h3 {
+    margin-bottom: 20px;
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box li {
+    margin: 10px 0;
+}
+
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.discord-btn:hover {
+    background-color: #5f73bc;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--primary-color);
+    border: 1px solid #404040;
+    color: white;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

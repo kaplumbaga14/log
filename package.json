@@ -1,0 +1,23 @@
+{
+  "name": "log",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "node index.html"
+  },
+  "author": "kaplumbaga",
+  "license": "MIT",
+  "dependencies": {
+    "express-session": "^1.18.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaplumbaga14/log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaplumbaga14/log/issues"
+  },
+  "homepage": "https://github.com/kaplumbaga14/log#readme",
+  "description": ""
+}
